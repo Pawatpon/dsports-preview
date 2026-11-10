@@ -195,10 +195,19 @@ html:has(#view-thonglor:target) #view-home,html:has(#view-northville:target) #vi
   .burger i{display:block;width:26px;height:2px;background:var(--nav-fg)}
   .burger i:last-child{width:17px}
   .nav-cta.nav-cta2{display:none}
-  @media(min-width:1360px){
+  .nav-cta2.btn-line{background:#C9A961;color:#1A1A1A;border-color:#C9A961}
+  .nav-cta2.btn-line:hover{background:#D8BC78;color:#1A1A1A;border-color:#D8BC78}
+  @media(min-width:1200px){
     .pill{display:flex}.nav-cta{display:inline-block}.burger{display:none}
   }
-  @media(min-width:1700px){.nav-cta.nav-cta2{display:inline-block}}
+  @media(min-width:1200px) and (max-width:1699px){
+    .pill>button,.dd>button,.pill>a,.dd>a{padding:8px 10px;font-size:.84rem}
+    .nav-cta{padding:9px 16px}
+  }
+  @media(min-width:1200px) and (max-width:1279px){.nav .soc{display:none}}
+  @media(min-width:1200px){.nav-cta.nav-cta2{display:inline-block}}
+  @media(min-width:1200px) and (max-width:1399px){.nav .soc{display:none}.nav-right{gap:6px}.nav-cta{padding:8px 11px;font-size:.8rem}}
+  @media(min-width:1400px) and (max-width:1699px){.nav-right{gap:6px}.nav .soc{width:32px}.nav-cta{padding:9px 13px;font-size:.88rem}}
 
   .mmenu{
     position:fixed;inset:0;z-index:200;background:var(--mm-bg);color:var(--bone);
